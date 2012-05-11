@@ -627,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -647,6 +648,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = VoiceBase;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -655,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -673,6 +676,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = VoiceBase;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -680,11 +684,7 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -696,18 +696,14 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -717,18 +713,14 @@
 				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		2A1172E612456A6700D119B5 /* Debug SIP */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -745,7 +737,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = "Debug SIP";
 		};
@@ -753,6 +745,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -799,6 +792,7 @@
 					"-lsrtp",
 				);
 				PRODUCT_NAME = VoiceBase;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = "Debug SIP";
@@ -806,11 +800,7 @@
 		2A1172E812456A6C00D119B5 /* Release SIP */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -825,7 +815,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = "Release SIP";
 		};
@@ -833,6 +823,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -877,6 +868,7 @@
 					"-lsrtp",
 				);
 				PRODUCT_NAME = VoiceBase;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = "Release SIP";
@@ -908,7 +900,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VoiceBase;
-				SDKROOT = iphoneos4.3;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = Debug;
@@ -961,7 +953,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VoiceBase;
-				SDKROOT = iphoneos4.3;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = "Debug SIP";
@@ -993,7 +985,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = VoiceBase;
-				SDKROOT = iphoneos4.3;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "i386 armv6 armv7";
 				ZERO_LINK = NO;
 			};
@@ -1049,7 +1041,7 @@
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/VoiceBase;
 				PRODUCT_NAME = VoiceBase;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/VoiceBase;
-				SDKROOT = iphoneos4.3;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = "Release SIP";
